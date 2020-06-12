@@ -1,0 +1,143 @@
+<!--index-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- <link rel="stylesheet" href="normalise.css" /> -->
+		<link rel="stylesheet" href="application.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Mr Coffee is the best coffee shop in Sydney."
+		/>
+		<title>Mr Coffee - Contact</title>
+	</head>
+	<body>
+		<!--start of viewable page-->
+		<!--header-->
+		<header>
+			<div class="navcontainer">
+				<!--left hand header logo-->
+				<img
+					class="index_head_logo"
+					src="/Assets/full_logo_white.png"
+					alt="logo white"
+				/>
+				<!--right hand header links-->
+				<nav class="topnav" id="myTopnav">
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/about.html">About</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- use bootstrap to make Right hand side responsive -->
+		<!--body of page-->
+		<div id="formcontainer">
+			<div class="contactalltext">
+				<p class="h2">Tell us about yourself!</p>
+			</div>
+			<div class="contactpage">
+				<form id="form" action="contact_page.php">
+					<label for="fname">First Name</label>
+					<input
+						type="text"
+						id="fname"
+						name="firstname"
+						placeholder="Your name.."
+						required
+					/>
+
+					<label for="lname">Last Name</label>
+					<input
+						type="text"
+						id="lname"
+						name="lastname"
+						placeholder="Your last name.."
+						required
+					/>
+
+					<label for="telephone">Telephone</label>
+					<input
+						type="tel"
+						id="telephone"
+						name="telephone"
+						placeholder="Your phone number.."
+						required
+					/>
+
+					<label for="email">E-Mail</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Your email.."
+						required
+					/>
+					<br /><br />
+					<label for="subject">Subject</label>
+					<textarea
+						id="subject"
+						name="subject"
+						placeholder="Type your message here.."
+						style="height: 100px;"
+						required
+					></textarea>
+
+					<input id="submitbutton" type="submit" value="Submit" />
+				</form>
+			</div>
+			<img
+				id="mrcoffeelogomain"
+				src="/Assets/logo_mrcoffee.png"
+				alt="main coffee logo"
+			/>
+			<div class="contactalltext">
+				<p class="h2">We are waiting for you!</p>
+			</div>
+			<p class="p10">
+				Mr.Coffee<br />
+				15 place Jules Guesde<br />
+				75006 Paris<br />
+				<br />
+				Tel : +33 9 46 25 78 45<br />
+				Mail : contact@mr-coffee.com<br />
+			</p>
+			<img id="googlemaps" src="/Assets/carte_contact.png" alt="googlemaps" />
+		</div>
+		<!--footer-->
+		<footer>
+			<div class="footerlogocontainer">
+				<a class="footerlogo"> </a>
+			</div>
+			<p class="h6">Follow us on social media!</p>
+			<div class="ftsocial">
+				<a class="social_linkedin" href="http://www.linkedin.com"></a>
+				<a class="social_twitter" href="http://www.twitter.com/"></a>
+				<a class="social_facebook" href="http://www.facebook.com/"></a>
+			</div>
+		</footer>
+		<!-- Contact page popup -->
+		<div id="popupcontainer" class="popupcontainer">
+			<div id="popup" class="togglepopup">
+				<p class="h7">THANK YOU!</p>
+				<p class="p11">
+					Your message has been sent!<br /><br />
+					We will try to answer them as quickly as possible. <br /><br />
+					See you soon at Mr. Coffee!
+				</p>
+				<img id="popuplogo" src="/Assets/logo_dark.png" alt="popuplogo" />
+				<button id="closebutton" class="closebutton">Return</button>
+			</div>
+		</div>
+		<script src="Contact.js"></script>
+	</body>
+</html>

@@ -1,0 +1,581 @@
+/* TIL margin goes top right bottom left */
+
+/* general // whole document */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Archivo', 'Regular 400';
+	min-width: 200px;
+}
+
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* *****************INDEX************************* */
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+
+/* header */
+
+header {
+	background: #6a7b8b;
+}
+
+.navcontainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+}
+
+.index_head_logo {
+	width: 156px;
+	height: 56px;
+	margin: 13px 41px;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+/* style header */
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.topnav {
+	float: right;
+}
+
+.topnav ul {
+	margin: 10px 41px;
+	padding: 0;
+	list-style: none;
+}
+
+.topnav li {
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.topnav a {
+	color: #f1f3f5;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.topnav a:hover {
+	color: #000;
+}
+
+.topnav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #f1f3f5;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+.topnav a:hover::before {
+	width: 100%;
+}
+
+/* image and text middle page */
+
+p.h2 {
+	text-shadow: 0px 2px 4px rgba(248, 248, 248, 0.5);
+	color: #5c5b5b;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#mrcoffeelogomain {
+	width: 207px;
+	height: 207px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mrcoffeebackmain {
+	width: 1247px;
+	height: 795px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#overlaytext {
+	color: #f1f3f5;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: bold;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#midcontainer {
+	position: relative;
+	/* only use position when you want to hold something on screen in same position */
+	text-align: center;
+}
+
+.midtext {
+	text-shadow: 0px 2px 4px rgba(248, 248, 248, 0.5);
+	color: #5c5b5b;
+	font-size: 40px;
+	font-weight: 400;
+	position: relative;
+	height: 100px;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Grey boxes */
+.greybox {
+	margin: 0px 0px 20px 43px;
+}
+
+.cardtext {
+	width: 320px;
+	height: 380px;
+	background-color: rgba(106, 123, 139, 0.42);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	float: left;
+	margin: 30px;
+	padding: 5px;
+}
+
+.greyicons {
+	margin: 20px;
+	width: 122px;
+	height: 122px;
+	margin: 10% 0% 0% 30%;
+}
+
+p.h3 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.p {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+}
+
+/* find out more */
+.findoutmore {
+	position: relative;
+	text-align: center;
+}
+.button {
+	background: #6a7b8b;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 20px 2px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: white;
+	color: #6a7b8b;
+}
+
+/* Rest of text above footer */
+.lowertext {
+	text-shadow: 0px 2px 4px rgba(248, 248, 248, 0.5);
+	color: #5c5b5b;
+	display: grid;
+	grid-template-columns: 14% 36% 40% 10%;
+	grid-template-rows: 25% 25% 25% 25%;
+	text-align: center;
+}
+
+.openicon {
+	width: 122px;
+	height: 122px;
+	margin: 13px 0px;
+	grid-row-start: 1;
+	grid-column: 2/3;
+}
+
+p.h4 {
+	font-size: 22px;
+	font-weight: 400;
+	padding-top: 55px;
+	padding-left: 150px;
+	text-align: left;
+	grid-row-start: 1;
+	grid-column: 2/4;
+}
+
+.p1 {
+	text-shadow: 0px 2px 4px rgba(248, 248, 248, 0.5);
+	color: #5c5b5b;
+	font-size: 48px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.p2 {
+	font-size: 20px;
+	font-weight: 400;
+	grid-row-start: 2;
+	grid-column-start: 2;
+	text-align: left;
+}
+
+.p3 {
+	font-size: 20px;
+	font-weight: 400;
+	grid-row-start: 2;
+	grid-column-start: 3;
+	text-align: left;
+}
+
+.p4 {
+	color: #5c5b5b;
+	font-size: 26px;
+	position: relative;
+	height: 100px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	grid-row-start: 3;
+	grid-column: 2/4;
+}
+
+.p5 {
+	color: #5c5b5b;
+	font-size: 24px;
+	position: relative;
+	height: 50px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	grid-row-start: 4;
+	grid-column: 2/4;
+}
+/* footers */
+footer {
+	left: 0;
+	/* bottom: 0; */
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background: #6a7b8b;
+}
+
+.footerlogocontainer {
+	position: absolute;
+	left: 5px;
+}
+
+.footerlogo {
+	background: url('/Assets/logo_blanc.png');
+	width: 53px;
+	height: 78px;
+	margin: 13px 41px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Only use h1 and h2 for SEO purposes, can use more depending on context */
+/* use boostrap for responsiveness */
+
+p.h6 {
+	color: #f1f3f5;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.ftsocial {
+	position: relative;
+	text-align: center;
+}
+
+.ftsocial a {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-size: cover;
+	justify-self: center;
+	background-repeat: no-repeat;
+	margin: 10px;
+}
+
+.social_twitter {
+	background-image: url('/Assets/logo_twitter.png');
+}
+
+.social_facebook {
+	background-image: url('/Assets/logo_facebook.png');
+}
+.social_linkedin {
+	background-image: url('/Assets/logo_linkedin.png');
+}
+
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* ****************ABOUT US*********************** */
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+
+.aboutus_container {
+	display: grid;
+	grid-template-columns: 2% 40% 16% 40% 2%;
+	grid-template-rows: 50% 50%;
+	position: relative;
+	margin: 0 auto;
+	color: #5c5b5b;
+	padding: 20px;
+}
+
+#aboutuspic1 {
+	height: 500px;
+	width: 500px;
+	grid-row: 1;
+	grid-column: 4;
+	float: center;
+}
+.p6 {
+	font-size: 40px;
+	position: relative;
+	height: 500px;
+	width: 500px;
+	text-align: left;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+/* make the p's and h's into classes */
+
+.p7 {
+	font-size: 20px;
+	position: relative;
+	height: 160px;
+	width: 500px;
+	text-align: left;
+	padding-top: 150px;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+#aboutuspic2 {
+	height: 500px;
+	width: 500px;
+	grid-row: 2;
+	grid-column: 2;
+	float: left;
+}
+
+.p8 {
+	font-size: 40px;
+	position: relative;
+	height: 500px;
+	width: 500px;
+	text-align: left;
+	grid-row: 2;
+	grid-column: 4;
+}
+.p9 {
+	font-size: 20px;
+	position: relative;
+	height: 500px;
+	width: 500px;
+	text-align: left;
+	grid-row: 2;
+	grid-column: 4;
+	padding-top: 120px;
+}
+
+.p10 {
+	font-size: 20px;
+	position: relative;
+	height: 160px;
+	width: 500px;
+	text-align: left;
+}
+
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* ****************CONTACT************************ */
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+
+#formcontainer {
+	position: relative;
+	display: inline-block;
+	width: 650px;
+	padding-left: 250px;
+	padding-right: 400px;
+}
+
+.contactalltext {
+	text-shadow: 0px 2px 4px rgb(69, 69, 70);
+	color: rgb(68, 67, 67);
+	font-size: 32px;
+	font-weight: 400;
+	text-align: left;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+select,
+textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	background-color: #f8fafc;
+	color: rgb(78, 78, 78);
+}
+
+input[type='submit'] {
+	background-color: #b0c4d6;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type='submit']:hover {
+	background-color: #093d6e;
+}
+
+#googlemaps {
+	display: inline-block;
+	padding-bottom: 50px;
+	width: 650px;
+	margin: 10px;
+}
+
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* ****************POPUP************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+
+.popupcontainer {
+	position: relative;
+	background-color: rgba(22, 22, 22, 0.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.togglepopup {
+	display: none;
+}
+
+.h7 {
+	color: #5c5b5b;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.p11 {
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	height: 80px;
+	width: 500px;
+	text-align: center;
+}
+#popuplogo {
+	position: fixed;
+	display: inline-block;
+	width: 45px;
+	height: 60px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	margin: 20px;
+}
+.closebutton {
+	background: #6a7b8b;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin-left: 41%;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.closebutton:hover {
+	background-color: white;
+	color: #6a7b8b;
+}
